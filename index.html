@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Robust, Rajin, dan Dapat Diandalkan — Gilang Muhamad Husen</title>
+
+  <!-- Luxurious fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Firebase SDK (v9 modular) via CDN -->
+  <script type="module">
+    // Firebase libraries loaded in the script section below (so browser will fetch when file opened)
+  </script>
+
+  <style>
+    :root{
+      --accent:#0f6b63; /* pharmacy teal */
+      --muted:#f4f7f6;
+      --gold:#cfa25f;
+      --glass: rgba(255,255,255,0.85);
+      --card-shadow: 0 8px 30px rgba(11,35,51,0.12);
+    }
+    html,body{height:100%;margin:0;font-family:'Josefin Sans',system-ui,Arial;}
+    body{
+      background: radial-gradient(circle at 10% 10%, rgba(15,107,99,0.07), transparent 10%),
+                  linear-gradient(180deg,#f7faf9 0%, #eaf3f1 60%);
+      background-image: url('What-is-pharma-manufacturing.png');
+      color:#052028;
+      padding:40px;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .container{
+      max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 340px;gap:32px;align-items:start;
+    }
+
+    .article{
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
+      border-radius:14px;padding:36px;box-shadow:var(--card-shadow);
+      border:1px solid rgba(15,107,99,0.06);
+    }
+
+    .eyebrow{font-size:13px;color:var(--accent);font-weight:600;letter-spacing:1px}
+    h1{font-family:'Playfair Display',serif;font-size:34px;margin:6px 0 14px;color:#073636}
+    .meta{color:#6b7b78;margin-bottom:18px}
+
+    .lead{font-size:18px;line-height:1.6;margin-bottom:18px}
+    .section{margin-bottom:18px}
+    blockquote{font-style:italic;color:#14534d;border-left:4px solid var(--gold);padding-left:12px;margin:12px 0;background:linear-gradient(90deg, rgba(207,162,95,0.03), transparent)}
+
+    /* Right panel (profile + audio + interactions) */
+    .side{
+      position:relative;background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9));border-radius:12px;padding:20px;box-shadow:var(--card-shadow);
+      border:1px solid rgba(11,35,51,0.04);
+      height:fit-content;
+    }
+
+    .profile{
+      display:flex;align-items:center;gap:12px;margin-bottom:16px;
+    }
+    .profile img{width:88px;height:88px;border-radius:50%;object-fit:cover;border:4px solid var(--muted);box-shadow:0 6px 20px rgba(11,35,51,0.08)}
+    .profile .who{font-weight:700;color:#073636}
+    .profile .role{font-size:13px;color:#6b7b78}
+
+    .audio-wrap{display:flex;flex-direction:column;gap:8px}
+
+    /* interactions */
+    .interact{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+    .like-row{display:flex;gap:12px;align-items:center}
+    .like-btn{background:linear-gradient(180deg,var(--accent), #0b6b5d);color:#fff;border:none;padding:10px 16px;border-radius:10px;font-weight:600;cursor:pointer;box-shadow:0 6px 18px rgba(15,107,99,0.18)}
+    .count{font-weight:700}
+
+    .comments{margin-top:12px}
+    form.comment-form{display:flex;flex-direction:column;gap:10px}
+    input[type=text],textarea{padding:10px;border-radius:8px;border:1px solid rgba(11,35,51,0.06);font-family:inherit}
+    button.submit{background:linear-gradient(90deg,var(--gold), #b98947);border:none;padding:10px;border-radius:8px;font-weight:700;cursor:pointer}
+
+    .comment-list{margin-top:12px;display:flex;flex-direction:column;gap:10px;max-height:280px;overflow:auto;padding-right:6px}
+    .comment{background:rgba(15,107,99,0.03);padding:10px;border-radius:8px}
+    .comment .name{font-weight:700;color:#073636}
+    .comment .time{font-size:12px;color:#6b7b78}
+
+    footer{margin-top:24px;text-align:center;color:#405a58;font-size:13px}
+
+    /* responsive */
+    @media (max-width:980px){.container{grid-template-columns:1fr;}
+      .side{order:-1}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="article">
+      <div class="eyebrow">Cerita Kerja — Betalaktam Penisilin</div>
+      <h1>Robust, Rajin, dan Dapat Diandalkan: Perjalanan Saya sebagai Cleaning Service</h1>
+      <div class="meta">oleh <strong>Gilang Muhamad Husen</strong> • PT Meprofarm Pharmaceutical Industries • Divisi Betalaktam Penisilin</div>
+
+      <p class="lead">Saya adalah seorang Cleaning Service yang bertugas di area Betalaktam Penisilin PT Meprofarm Pharmaceutical Industries. Setiap hari, saya menjalani pekerjaan dengan satu prinsip sederhana: kebersihan bukan hanya tentang tempat yang terlihat bersih, tetapi tentang menjaga keamanan dan kualitas bagi semua orang yang bekerja di dalamnya.</p>
+
+      <div class="section">
+        <h3>Lingkungan Farmasi — Bukan Tempat Biasa</h3>
+        <p>Lingkungan farmasi bukanlah tempat biasa. Di divisi Betalaktam Penisilin, setiap area harus dipastikan steril dan memenuhi standar tinggi untuk menjamin produk obat yang dihasilkan tetap aman untuk pasien. Di sinilah saya merasa bangga menjadi bagian kecil dari proses besar untuk kesehatan masyarakat.</p>
+      </div>
+
+      <div class="section">
+        <h3>Rajin dalam Setiap Detail</h3>
+        <p>Saya memulai hari dengan memastikan semua area pabrik dalam kondisi terbaik—mulai dari lantai, peralatan pendukung, hingga area produksi yang memerlukan perhatian ekstra. Setiap prosedur kebersihan harus dilakukan sesuai standar, karena sedikit kelalaian bisa berdampak besar.</p>
+        <blockquote>"Disiplin adalah jembatan antara impian dan pencapaian."</blockquote>
+        <p>Saya percaya bahwa hasil terbaik lahir dari kebiasaan baik yang dilakukan secara konsisten. Oleh karena itu, saya melatih diri untuk tetap teliti dalam setiap langkah.</p>
+      </div>
+
+      <div class="section">
+        <h3>Dapat Diandalkan Setiap Saat</h3>
+        <p>Bagi saya, menjadi dapat diandalkan adalah kehormatan. Rekan kerja saya mempercayakan kebersihan lingkungan kerja kepada saya, dan saya ingin selalu membalas kepercayaan itu dengan kerja yang maksimal. Di saat mereka fokus pada produksi obat, saya memastikan semua berjalan aman dan nyaman.</p>
+        <blockquote>"Kesuksesan bukan milik mereka yang hebat sesekali, tetapi milik mereka yang tekun setiap hari."</blockquote>
+      </div>
+
+      <div class="section">
+        <h3>Menjadi Bagian dari Misi Kesehatan</h3>
+        <p>Saya mungkin bukan bagian yang langsung terlihat dalam proses produksi, tetapi saya tahu betul bahwa peran saya sangat penting. Saya ikut menjaga kualitas, keamanan, dan integritas setiap obat yang kelak membantu banyak orang untuk sembuh.</p>
+      </div>
+
+      <div class="section">
+        <h3>Penutup</h3>
+        <p>Perjalanan saya sebagai Cleaning Service mengajarkan bahwa setiap pekerjaan yang dilakukan dengan sepenuh hati memiliki nilai luar biasa. Bukan soal seberapa besar pekerjaan itu terlihat, tapi seberapa besar kontribusi yang kita berikan.</p>
+        <p><strong>"Kita mungkin bekerja dalam diam, tapi hasilnya berbicara lantang untuk masa depan."</strong></p>
+        <p>Terima kasih telah membaca kisah saya. Semoga cerita ini menjadi inspirasi bahwa setiap orang memiliki peran penting dalam mewujudkan kebaikan yang lebih besar. Jika Anda punya saran atau pesan untuk saya, saya akan senang mendengarnya! ✨</p>
+      </div>
+
+      <footer>&copy; <span id="copyright-year"></span> Gilang Muhamad Husen</footer>
+    </main>
+
+    <aside class="side">
+      <div class="profile">
+        <!-- Replace src with your profile image URL -->
+        <img id="profile-pic" src="Gilang Muhamad Husen.jpg" alt="Foto Profil">
+        <div>
+          <div class="who">Gilang Muhamad Husen</div>
+          <div class="role">Cleaning Service — Betalaktam Penisilin</div>
+        </div>
+      </div>
+
+      <div class="audio-wrap">
+        <div style="font-weight:700;margin-bottom:6px"></div>
+        <!-- Replace source with your mp3 link or update the <audio> src dynamically -->
+        <audio id="player" controls style="width:100%;border-radius:8px">
+          <source src="I Think They Call This Love (Cover).mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="interact">
+        <div class="like-row">
+          <button id="likeBtn" class="like-btn">👍 Like</button>
+          <div><span class="count" id="likeCount">0</span> likes</div>
+        </div>
+
+        <div class="comments">
+          <h4>Komentar</h4>
+          <form id="commentForm" class="comment-form">
+            <input id="nameInput" type="text" placeholder="Nama Anda" required />
+            <textarea id="commentInput" rows="3" placeholder="Tulis komentar..." required></textarea>
+            <button class="submit" type="submit">Kirim Komentar</button>
+          </form>
+
+          <div class="comment-list" id="comments"></div>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- Firebase + App JS -->
+  <script type="module">
+    // --- 1) Add Firebase config here (replace the placeholders) ---
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_AUTH_DOMAIN",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_STORAGE_BUCKET",
+      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    };
+
+    // --- 2) Load Firebase libraries from CDN (modular v9) ---
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js';
+    import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, doc, getDoc, setDoc, updateDoc } from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js';
+
+    // Initialize
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // References
+    const likesDocRef = doc(db, 'site_meta', 'likes');
+    const commentsColRef = collection(db, 'comments');
+
+    // UI
+    const likeBtn = document.getElementById('likeBtn');
+    const likeCountEl = document.getElementById('likeCount');
+    const commentForm = document.getElementById('commentForm');
+    const nameInput = document.getElementById('nameInput');
+    const commentInput = document.getElementById('commentInput');
+    const commentsList = document.getElementById('comments');
+
+    // Show copyright year
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+    // Helper to format time
+    function timeAgo(ts) {
+      const d = ts.toDate ? ts.toDate() : new Date(ts);
+      return new Intl.DateTimeFormat('id-ID', { dateStyle: 'medium', timeStyle: 'short' }).format(d);
+    }
+
+    // --- Likes: Ensure a doc exists, then listen for changes ---
+    async function initLikes() {
+      try {
+        // Try to create default doc if not exists
+        const snap = await getDoc(likesDocRef);
+        if (!snap.exists()) {
+          await setDoc(likesDocRef, {count: 0});
+        }
+      } catch (e) {
+        console.error('initLikes error', e);
+      }
+
+      // Realtime listener for likes
+      onSnapshot(likesDocRef, (docSnap) => {
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          likeCountEl.textContent = data.count ?? 0;
+        }
+      });
+
+      likeBtn.addEventListener('click', async () => {
+        try {
+          // optimistic UI handled by listener; update atomically
+          const current = (await getDoc(likesDocRef)).data()?.count ?? 0;
+          await updateDoc(likesDocRef, { count: current + 1 });
+        } catch (err) {
+          console.error('like error', err);
+        }
+      });
+    }
+
+    // --- Comments: add & listen ---
+    function initComments() {
+      // Listen for new comments, ordered by timestamp
+      const q = query(commentsColRef, orderBy('createdAt', 'desc'));
+      onSnapshot(q, (snapshot) => {
+        commentsList.innerHTML = '';
+        snapshot.forEach(doc => {
+          const c = doc.data();
+          const el = document.createElement('div');
+          el.className = 'comment';
+          el.innerHTML = `<div class='name'>${escapeHtml(c.name)} <span class='time'>• ${timeAgo(c.createdAt)}</span></div><div class='text'>${escapeHtml(c.text)}</div>`;
+          commentsList.appendChild(el);
+        });
+      });
+
+      commentForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const name = nameInput.value.trim();
+        const text = commentInput.value.trim();
+        if (!name || !text) return;
+        try {
+          await addDoc(commentsColRef, { name, text, createdAt: new Date() });
+          nameInput.value = '';
+          commentInput.value = '';
+        } catch (err) {
+          console.error('comment error', err);
+        }
+      });
+    }
+
+    // XSS-safe small escape
+    function escapeHtml(str){
+      return str.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'","&#039;");
+    }
+
+    // Initialize everything
+    (async function(){
+      try{
+        await initLikes();
+        initComments();
+      }catch(e){console.error(e)}
+    })();
+
+  </script>
+
+  <!-- Small accessibility & UX JS -->
+  <script>
+    // Allow clicking profile image to change (local only)
+    document.getElementById('profile-pic').addEventListener('click', ()=>{
+      const url = prompt('Masukkan URL foto profil baru:');
+      if(url) document.getElementById('profile-pic').src = url;
+    });
+
+    // If you want to replace the audio via prompt
+    document.getElementById('player').addEventListener('dblclick', ()=>{
+      const url = prompt('Masukkan URL MP3 (direct link) untuk audio:');
+      if(url){
+        document.getElementById('player').src = url;
+        document.getElementById('player').load();
+      }
+    });
+  </script>
+</body>
+</html>
